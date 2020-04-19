@@ -1,8 +1,8 @@
 require('dotenv').config()
 module.exports = {
   siteMetadata: {
-    title: `jamstack-typescript-boilerplate`,
-    description: `jamstack-typescript-boilerplate`,
+    title: `my-gatsby-project-dashboard`,
+    description: `my-gatsby-project-dashboard`,
     author: `@tripheo0412`,
     type: process.env.GATSBY_ACTIVE_ENV || 'staging',
     siteUrl: `https://www.your-app-domain.netlify.app/`,
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `jamstack-typescript-boilerplate`,
+        name: `my-gatsby-project-dashboard`,
         short_name: `jamstack`,
         start_url: `/`,
         background_color: `#663399`,
