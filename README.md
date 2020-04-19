@@ -1,4 +1,4 @@
-# Create Gatsby Web [![Node Version](https://img.shields.io/badge/Node->=10-339933.svg?style=flat&logo=Node.js)]() [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat&logo=Read-The-Docs)](https://github.com/tripheo0412/create-gatsby-web/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/tripheo0412/create-gatsby-web/blob/master/CONTRIBUTING.md)
+# Bootstrap By Create Gatsby Web [![Node Version](https://img.shields.io/badge/Node->=10-339933.svg?style=flat&logo=Node.js)]() [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat&logo=Read-The-Docs)](https://github.com/tripheo0412/create-gatsby-web/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/tripheo0412/create-gatsby-web/blob/master/CONTRIBUTING.md)
 
 Bootstrap a Gatsby Web with pre configured development utilities, SEO optimized, ready support for CI/CD pipeline and CMS.
 
