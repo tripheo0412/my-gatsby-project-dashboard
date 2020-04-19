@@ -2,28 +2,20 @@ require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: `my-gatsby-project-dashboard`,
-    description: `my-gatsby-project-dashboard`,
+    description: `Showing the statuses of my Netlify deploys & CircleCI tests.`,
     author: `@tripheo0412`,
     type: process.env.GATSBY_ACTIVE_ENV || 'staging',
-    siteUrl: `https://www.your-app-domain.netlify.app/`,
-    hostname: `your-app-domain.netlify.app`,
+    siteUrl: `https://www.tripheo2410-gatsby-dashboard.netlify.app/`,
+    hostname: `tripheo2410-gatsby-dashboard`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
-    /***** REMOVE COMMENT TO ENABLE CONTENTFUL CMS
-		{
-			resolve: `gatsby-source-contentful`,
-			options: {
-				spaceId: process.env.CONTENTFUL_SPACE_ID,
-				accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-			},
-		},
-    ******/
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://www.your-app-domain.netlify.app/`,
+        siteUrl: `https://www.tripheo2410-gatsby-dashboard.netlify.app/`,
       },
     },
     {
@@ -47,7 +39,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `my-gatsby-project-dashboard`,
-        short_name: `jamstack`,
+        short_name: `Status`,
+        description: `Showing the statuses of my Netlify deploys & CircleCI tests.`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -55,6 +48,19 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-netlify`,
+      options: {
+        apiKey: process.env.NETLIFY_ACCESS_KEY,
+      },
+    },
+    {
+      resolve: `gatsby-source-circleci`,
+      options: {
+        apiKey: process.env.CIRCLECI_KEY,
+      },
+    },
+    `gatsby-plugin-theme-ui`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`,
