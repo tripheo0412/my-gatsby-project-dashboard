@@ -31,7 +31,8 @@
         "dom-size": ["error", { "minScore": 0.98 }],
         "uses-rel-preconnect": "off",
         "unused-css-rules": "off",
-        "offscreen-images": ["warn", { "minScore": 0 }]
+        "offscreen-images": ["warn", { "minScore": 0 }],
+        "tap-targets": "off"
       }
     },
     "upload": {
