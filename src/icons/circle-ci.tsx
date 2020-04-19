@@ -4,8 +4,8 @@ const CircleCI = (props: any) => (
   <svg
     role="img"
     viewBox="0 0 24 24"
-    width="22px"
-    height="22px"
+    width="48px"
+    height="48px"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
