@@ -8,7 +8,7 @@
     "@emotion/core": "^10.0.28",
     "@mdx-js/react": "^1.5.8",
     "@theme-ui/presets": "^0.3.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.19.18",
     "gatsby-image": "^2.2.41",
